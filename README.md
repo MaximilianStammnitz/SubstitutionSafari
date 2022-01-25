@@ -4,12 +4,12 @@ Substitution Safari - Scripts for processing Substitution calls
 ===============================================================
 ![SubstitutionSafari](/Images/SubstitutionSafari_logo.png)
 
-Using the functions in [Substitution Safari](/SubstitutionSafari.R), we generate substitution (also termed single-base substitutions or single-nucleotide variants) spectra in line with the widely-used classification scheme first adapted by [Alexandrov et al., 2013](https://www.nature.com/articles/nature12477) (see [COSMIC SBS signature catalogues](https://cancer.sanger.ac.uk/signatures/sbs/)).
+Using the functions in [Substitution Safari](/SubstitutionSafari.R), we generate substitution – also termed single-base substitution (SBS) or single-nucleotide variant (SNV) – spectra in line with the widely-used classification scheme first adapted by [Alexandrov et al., 2013](https://www.nature.com/articles/nature12477) (see [COSMIC SBS signature catalogues](https://cancer.sanger.ac.uk/signatures/sbs/)).
 
-Note that, in order to produce your own spectra, you will need to specify:
+Note that, in order to produce your own spectrum, you will need to specify:
 * the reference genome fasta file based on which your alignments' substitution calls were generated
 * a VCF or dataframe object containing one substitution per line, featuring the minimal set of columns "CHROM", "POS", "REF", "ALT"
-* a table with the triplet frequency counts of your reference genome (or exome), which can be used to normalise the observed substitution counts for context-specific mutation opportunity (an example table can be found [here](/files/reference_genome_trinucleotides.txt)
+* a table with the triplet frequency counts of your reference genome (or exome), which can be used to normalise the observed substitution counts for context-specific mutation opportunity (an example table can be found [here](/Helper files/reference_genome_trinucleotides.txt)
 
 My code then groups all of your substitutions with reference to the 96 different, pyrimidine-centered subgroups of C>A, C>G, C>T, T>A, T>C, and T>G types. Plotted spectra look like this example:
 
