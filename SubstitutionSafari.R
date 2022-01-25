@@ -148,7 +148,7 @@ substitution.spectrum <- function(x, normalised){
     
     reference_trinucleotides.div <- c(rep(as.numeric(reference_trinucleotides[,5])[1:16],3),
                                       rep(as.numeric(reference_trinucleotides[,5])[17:32],3))
-    counts.norm <- round(c(counts/reference_trinucleotides.div)/sum(c(counts/reference_trinucleotides.div))*sum(counts)) 
+    counts.norm <- c(counts/reference_trinucleotides.div)/sum(c(counts/reference_trinucleotides.div))
     names(counts) <- names(counts.norm) <- consensus.mut
     out <- list("counts" = counts, "counts.normalised" = counts.norm)
   
