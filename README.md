@@ -4,7 +4,7 @@ SubstitutionSafari – from substitution calls to substitution spectra
 ====================================================================
 ![SubstitutionSafari](/Images/SubstitutionSafari_logo.png)
 
-Using the functions in [Substitution Safari](/SubstitutionSafari.R), we generate substitution – also termed single-base substitution (SBS) or single-nucleotide variant (SNV) – spectra in line with the widely-used classification scheme first adapted by [Alexandrov et al., 2013](https://www.nature.com/articles/nature12477) (see [COSMIC SBS signature catalogues](https://cancer.sanger.ac.uk/signatures/sbs/)).
+Using the functions in [SubstitutionSafari](/SubstitutionSafari.R), we generate substitution – also termed single-base substitution (SBS) or single-nucleotide variant (SNV) – spectra in line with the widely-used classification scheme first adapted by [Alexandrov et al., 2013](https://www.nature.com/articles/nature12477) (see [COSMIC SBS signature catalogues](https://cancer.sanger.ac.uk/signatures/sbs/)).
 
 Note that, in order to produce your own spectrum, you will need to specify:
 * the reference genome fasta file based on which your alignments' substitution calls were generated
