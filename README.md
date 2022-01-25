@@ -15,6 +15,8 @@ My code then groups all of your substitutions with reference to the 96 different
 
 ![example](/Images/Example_spectrum.png)
 
-In the above case, we see enrichments of C>T substitutions, particularly in A[C]G and G[C]G contexts. These spikes indicate the presence of COSMIC signature SBS6, a mutational signature commonly identified in tumours with DNA mismatch repair deficiency. You might want to corroborate this by inspecting and fitting combinations of COSMIC signatures to this spectrum, for example by using a tool such as [sigfit](https://github.com/kgori/sigfit).
+In the above case, we see enrichments of C>T substitutions, particularly in A[C]G and G[C]G contexts. These spikes indicate the presence of COSMIC signature SBS6, a mutational signature commonly identified in tumours with DNA mismatch repair deficiency. You might want to corroborate this by inspecting and fitting combinations of COSMIC signatures to the spectrum, for example by using a tool such as [sigfit](https://github.com/kgori/sigfit).
 
-Disclaimer #1: The script and its associated results are yet unpublished/peer-reviewed. It has nevertheless already been extensively benchmarked with substitution calls made against the Tasmanian devil reference. In theory, this code should run smoothly for ANY species with a reference genome. If you do face a challenge in using the code or wish to provide general feedback, please get in touch directly via maxrupsta@gmail.com
+Note that the script and its associated results are yet unpublished/peer-reviewed. It has nevertheless already been extensively benchmarked with substitution calls made against the Tasmanian devil reference. In theory, this code should run smoothly for ANY species with a reference genome. 
+
+Find it helpful or you simply enjoy making substitution spectra against your brand-new species reference genome with these lines? Then why not follow the same style with your indel calls – have a look at its sister library [Indelwald](https://github.com/MaximilianStammnitz/Indelwald)! If you do face a challenge in using the code or wish to provide general feedback, please get in touch directly via maxrupsta@gmail.com
