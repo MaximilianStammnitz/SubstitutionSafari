@@ -1,2 +1,22 @@
-# SubstitutionSafari
-R processing of substitutions.
+![Scripting](https://img.shields.io/badge/Language-R-yellow.svg) ![Copyright](https://img.shields.io/badge/Copyright-(c)_2022_Max\_Stammnitz\_@TCG\_Cambridge-green.svg)
+
+Substitution Safari - Scripts for processing Substitution calls
+===============================================================
+![Indelwald](/Images/Indelwald_logo.png)
+
+<b>############ 25-01-2022: UPDATE ##############</b>
+
+Using the functions in [Substitution Safari](/SubstitutionSafari.R), we generate substitution (also termed single-base substitutions or single-nucleotide variants) spectra in line with the widely-used classification scheme first adapted by [Alexandrov et al., 2013](https://www.nature.com/articles/nature12477) (see [COSMIC SBS signature catalogues](https://cancer.sanger.ac.uk/signatures/sbs/)).
+
+Note that, in order to produce your own spectra, you will need to specify:
+* the reference genome fasta file based on which your alignments' substitution calls were generated
+* a VCF or dataframe object containing one substitution per line, featuring the minimal set of columns "CHROM", "POS", "REF", "ALT"
+* a table with the triplet frequency counts of your reference genome (or exome), which can be used to normalise the observed substitution counts for context-specific mutation opportunity (an example table can be found [here](/files/reference_genome_trinucleotides.txt)
+
+My code then groups all of your substitutions with reference to the 96 different, pyrimidine-centered subgroups of C>A, C>G, C>T, T>A, T>C, and T>G types. Plotted spectra look like this example:
+
+![example](/Images/Example_spectrum.png)
+
+In the above case, we see enrichments of C>T substitutions and particularly in A[C]G and G[C]G contexts. These spikes indicate the presence of COSMIC signature SBS6, a mutational signature commonly identified in tumours with DNA mismatch repair (MMR) deficiency. You might want to confirm this by inspecting and fitting combinations of COSMIC signatures to this spectrum, for example by using a tool such as [sigfit](https://github.com/kgori/sigfit).
+
+Disclaimer #1: The script and its associated results are yet unpublished/peer-reviewed. It has nevertheless already been extensively benchmarked with substitution calls made against the Tasmanian devil reference. In theory, this code should run smoothly for ANY species with a reference genome. If you do face a challenge in using the code or wish to provide general feedback, please get in touch directly via maxrupsta@gmail.com
