@@ -1,7 +1,7 @@
 ![Scripting](https://img.shields.io/badge/Language-R-yellow.svg) ![Copyright](https://img.shields.io/badge/Copyright-(c)_2022_Max\_Stammnitz\_@TCG\_Cambridge-green.svg)
 
-SubstitutionSafari – from substitution calls to SBS spectra
-===========================================================
+SubstitutionSafari – from substitution calls to substitution spectra
+====================================================================
 ![SubstitutionSafari](/Images/SubstitutionSafari_logo.png)
 
 Using the functions in [Substitution Safari](/SubstitutionSafari.R), we generate substitution – also termed single-base substitution (SBS) or single-nucleotide variant (SNV) – spectra in line with the widely-used classification scheme first adapted by [Alexandrov et al., 2013](https://www.nature.com/articles/nature12477) (see [COSMIC SBS signature catalogues](https://cancer.sanger.ac.uk/signatures/sbs/)).
