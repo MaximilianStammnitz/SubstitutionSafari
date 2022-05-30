@@ -19,3 +19,9 @@ In the above case, we see enrichments of C>T substitutions, particularly in A[C]
 Note that the script and its associated results are yet unpublished/peer-reviewed. It has nevertheless already been extensively benchmarked with substitution calls made against the Tasmanian devil reference. In theory, this code should run smoothly for ANY species with a reference genome. 
 
 Find it helpful or you simply enjoy making SubstitutionSafari spectra against your brand-new, awesome reference genome? Then why not surf the wave with your indel calls? – have a look at its sister library [Indelwald](https://github.com/MaximilianStammnitz/Indelwald)! If you do face a challenge in using the code or wish to provide general feedback, please get in touch directly via maxrupsta@gmail.com
+
+---
+
+## Citation
+
+If you can make good use of these functions in your work, I would be grateful if you can cite our associated preprint **[The evolution of two transmissible cancers in Tasmanian devils (Stammnitz _et al._ 2022, bioRxiv)](https://www.biorxiv.org/content/10.1101/2022.05.27.493404v1)**
